@@ -37,7 +37,7 @@ class PhotosViewController: UIViewController , UITableViewDataSource, UITableVie
         return cell
     }
     
-    //------------------END METHODS-----------------
+    //------------------END METHODS------------------
 
     @IBOutlet weak var TVPhoto: UITableView!
     var posts: [[String: Any]] = []
