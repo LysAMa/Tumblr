@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+
 
 class PhotosViewController: UIViewController , UITableViewDataSource, UITableViewDelegate{
     
@@ -36,14 +38,18 @@ class PhotosViewController: UIViewController , UITableViewDataSource, UITableVie
         
         return cell
     }
-    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        TVPhoto.deselectRow(at: indexPath, animated: true)
+    }
     //------------------END METHODS------------------
 
     @IBOutlet weak var TVPhoto: UITableView!
     var posts: [[String: Any]] = []
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         TVPhoto.delegate = self
         TVPhoto.dataSource = self
@@ -80,15 +86,31 @@ class PhotosViewController: UIViewController , UITableViewDataSource, UITableVie
         // Dispose of any resources that can be recreated.
     }
     
+   
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
+        
+        if(segue.identifier == "FirstSegue"){
+            let vc = segue.destination as! PhotoDetailsViewController
+            let cell = sender as! UITableViewCell
+            let indexPath = TVPhoto.indexPath(for: sender as! UITableViewCell)!
+            
+          
+            
+            
+            }
+            
+            
+        }
+        
+
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
-}
+
