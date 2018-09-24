@@ -7,19 +7,25 @@
 //
 
 import UIKit
+import AlamofireImage
 
-fileprivate let PhotoPreviewSegueIden = "PhotoPreview"
+
+
 
 class PhotoDetailsViewController: UIViewController {
-    var image: UIImage!
     
-    @IBOutlet weak var ImageDetails: UIImageView!
+    @IBOutlet weak var DetailsImage: UIImageView!
+    
+    var imageURL: URL!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
-        ImageDetails.image = image
+        DetailsImage.af_setImage(withURL: imageURL)
+       
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

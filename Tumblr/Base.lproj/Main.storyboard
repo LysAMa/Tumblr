@@ -83,7 +83,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xEo-wH-i3r">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -91,12 +91,12 @@
                         <viewLayoutGuide key="safeArea" id="aU1-x9-SYT"/>
                     </view>
                     <connections>
-                        <outlet property="ImageDetails" destination="xEo-wH-i3r" id="NzX-0h-Bjj"/>
+                        <outlet property="DetailsImage" destination="xEo-wH-i3r" id="Dbe-jZ-oZo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U3t-J5-ehV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1130.4000000000001" y="-16.641679160419791"/>
+            <point key="canvasLocation" x="1128.985507246377" y="-17.119565217391305"/>
         </scene>
     </scenes>
 </document>
