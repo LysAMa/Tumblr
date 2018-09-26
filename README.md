@@ -20,7 +20,7 @@ The following **stretch** user stories are implemented:
 - [ ] Customize the selection effect of the cell (+1pt)
 - [ ] Add Avatar and Publish Dates (+2pt)
 - [ ] Zoomable Photo View (+2pt)
-- [ ] Infinite Scrolling (+2pt)
+- [X] Infinite Scrolling (+2pt)
 
 The following **additional** user stories are implemented:
 
